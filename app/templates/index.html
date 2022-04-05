@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Road Traffic Accident Prediction </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href={{ url_for('static', filename='images/transport.png') }}>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+		<noscript><link rel="stylesheet" href={{ url_for('static', filename='css/noscript.css') }}/></noscript>
+		 <style>
+    h4 
+	{ color:#FFFFFF; }
+	
+  </style>
+  
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#three">Upload</a></li>
+							<li><a href="#one">Analysis</a></li>
+							<li><a href="#two">Prediction</a></li>
+						
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style4 fullscreen spotlights">
+					
+						<div class="inner" >
+							<h2 style="text-align:center">An Automation to Reduce Traffic Accidents Using Machine Learning</h2>
+							<h4 style="text-align:justify">The study of Influencing factors of traffic accidentsis an important research direction in the field of traffic safety. In this project, we built a machine learning model that predicts the probability of RTAs in different locations in London., The strong rules hidden inthese frequent item sets often uncover the association betweeninfluencing factors of accidents, which can be used to reduce theoccurrence of accidents by breaking them. The rules can also beused to probe usual scenes of accidents, and some correspondingsecurity improvement measures can be taken to prevent theaccidents, and ultimately improve the city's traffic safety level.General speaking, association rule mining can produce tons ofweak rules, the study first designed a method to calculate minimalSupport value of training parameters, and further put forward away to extract strong rules automatically. The results of theexperiments showed that these methods proposed in the paper areeffective. Therefore, an automatic modeling algorithm usingassociation rules was finally established to promote the effectiveapplication of association rule mining on intelligent transportation system.</h4>
+							<!--p></br>We hope that this project can contribute to the improvement of road safety.</br><i>
+									<p>For best viewing experience, please open this website in Google Chrome in a full-screen mode.</p>
+							</i></p!-->
+							<ul class="actions">
+								<li><a href="#three" class="button scrolly">Next</a></li>
+							</ul>
+						</div>
+					</section>
+					
+   	<!-- Three -->
+					<section id="three" class="wrapper style1 spotlights">
+					<section>
+						<div class="inner" style="height:600px;margin-top:100px;">
+							<h2 style="margin-left:65px;">Upload Dataset</h2>
+
+							<div class="row" style="margin-left:300px;">
+								<div class="col-6 col-12-medium">
+									 <form action="http://localhost:5000/preview" name="fs" id="fs" method="post" enctype=multipart/form-data>
+                       <br/>
+                       <input type="file" name="datasetfile" id="file1" required />
+                       <br/>
+					   <br/>
+					   <br/>
+                    <input type="submit" style="" class="btn btn-primary tm-btn-search" value="Upload">
+                      </form>
+							</div>
+
+     
+						</div>
+						</div>
+				
+					
+					</section>
+			
+					</section>
+					
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						
+
+							<div class="content"  style="height:700px;">
+								<div class="inner">
+									<!--h2>Problem Statement</h2>
+									<p>This subsection provides the motivation behind our effort to build a RTA prediction model.</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('main.exploration') }}" class="button">Explore</a></li>
+									</ul-->
+									<br>
+									<h2 style="margin-left:65px;">Datasets and Research Methodology</h2>
+									<p style="margin-left:65px;">This subsection elaborates our data collection process and the steps we undertook to build the RTA prediction model.</p>
+									<ul class="actions">
+										<!--<li><a href="exploration.html#two" class="button">Explore</a></li> -->
+										<li style="margin-left:65px;"><a href="{{ url_for('main.exploration') }}#two" class="button">Explore</a></li>
+
+									</ul>
+									<h2 style="margin-left:65px;">Exploration and Observations</h2>
+									<p style="margin-left:65px;">This subsection condenses the interesting observations and takeaways we had upon exploring the dataset.</p>
+									<ul class="actions">
+										<li style="margin-left:65px;"><a href="{{ url_for('main.exploration') }}#three" class="button">Explore</a></li>
+									</ul>
+									<h2 style="margin-left:65px;">Algorithms</h2>
+									<p style="margin-left:65px;">This subsection summarizes the prediction algorithms we tried and their performance.</p>
+									<ul class="actions">
+										<li style="margin-left:65px;"><a href="{{ url_for('main.exploration') }}#four" class="button">Explore</a></li>
+									</ul>
+								</div>
+							
+							
+								
+				
+							</div>
+					
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 spotlights">
+						<div class="inner" style="height:700px;">
+							<h2 style="margin-top:50px;margin-left:0px;">Prediction Page</h2>
+							<p style="margin-left:0px;">Using the best performing algorithm, we built an interactive RTA prediction visualization. Click the button below to visit this predict page.</p>
+
+							<ul class="actions">
+								<li style="margin-left:0px;"><a href="{{ url_for('main.interaction') }}"class="button">Predict</a></li>
+							</ul>
+						</div>
+					</section>
+
+			
+
+			</div>
+
+	
+
+		<!-- Scripts -->
+
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Exploration</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href={{ url_for('static', filename='images/transport.png') }}>
+	<link rel="stylesheet" href="static/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="{{ url_for('main.home') }}" class="title">RAP</a>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('main.home') }}">Home</a></li>
+				<li><a href="{{ url_for('main.exploration') }}" class="active">Exploration</a></li>
+				<li><a href="{{ url_for('main.interaction') }}">Interaction</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+
+		<section id="one" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Preview</h1>
+				<span> {{ df_view.to_html(classes="table striped",na_rep="-") | safe}} </span>
+				<!--span class="image fit"><img src="../static/images/carburning.jpeg" style="height:750px;width:1050px;border: 2px steelblue solid;padding: 15px;margin-left:auto;margin-right:auto" alt="" /></span!-->
+				<!--p>Road Traffic Accidents (RTAs) are a major cause of death globally, leading to  around 1.25 million deaths annually. Transport authorities worldwide have been striving to implement strategies to minimize RTAs by introducing various safety regulations. However, RTA reduction has proven to be an elusive goal as these measures have hitherto failed to make a considerable dent in the frequency of RTA.
+				</p>
+
+				<p> This failure partially stems from the difficulty in predicting when and where RTAs may occur. Although difficult, such prediction is not impossible. RTAs do not occur in purely stochastic manner; several publications affirm that the probability of RTAs is influenced by multitude of measurable factors. These factors include obvious ones such as driving speed, traffic condition, road structure and weather to less obvious ones such as national mood and lunar cycle.</p>
+
+				 <p>In an effort to reduce RTA frequency, various municipal and national governments in the UK have made available rich datasets of RTAs and their associated factors. We have explored these datasets and discovered factors that correlate well with RTA probability. Using this observation, we have created a machine learning model that predicts with high accuracy as to when and where RTAs are likely to occur.  </p!-->
+
+			</div>
+		</section>
+
+		
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery.scrollex.min.js"></script>
+	<script src="static/js/jquery.scrolly.min.js"></script>
+	<script src="static/js/browser.min.js"></script>
+	<script src="static/js/breakpoints.min.js"></script>
+	<script src="static/js/util.js"></script>
+	<script src="static/js/main.js"></script>
+
+</body>
+
+</html>
