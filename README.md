@@ -1,5 +1,5 @@
 # Road-Accident-Prediction-using-ML
-Hi everyone,
+
 To setup, follow the below steps :
 
 1.Install Python 3.6 from below link(dont use other python versions as the project is build on older libraries)
