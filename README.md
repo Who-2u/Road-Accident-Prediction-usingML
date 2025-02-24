@@ -29,5 +29,3 @@ open your browser and go to localhost:5000
 navigate to upload tab and upload data provided in app/data/only_accident_points.
 
 Note: you can update the data in the spreadsheets with fresh data in the same format
-
-Incase any queries,write to me in paneerselvam1157@gmail.com
